@@ -403,7 +403,9 @@ label {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-cornflower);
   width: 24px;
+  max-width: 24px;
   height: 24px;
+  max-height: 24px;
   justify-content: center;
   align-items: center;
   transition: 250ms;
