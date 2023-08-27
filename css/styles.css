@@ -55,9 +55,9 @@ img {
 /* SEKCJE */
 
 .container {
-  width: 1158px;
+  /* width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; */
 }
 
 .section-heading {
@@ -423,13 +423,12 @@ label {
 .footer {
   background-color: var(--color-navy-blue);
   width: 100%;
-  padding: 100px 0;
-  display: flex;
+  padding: 97.5px 0;
+  display: block;
 }
 
 .footer-group {
-  display: flex;
-  gap: 80px;
+  display: block;
 }
 
 .footer-info {
@@ -437,8 +436,9 @@ label {
   color: var(--color-cloud);
   font-weight: 400;
   width: 264px;
-  margin-left: 0;
-  margin-right: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -447,16 +447,34 @@ label {
   color: var(--color-cloud);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  line-height: 21px;
   display: inline-block;
   margin-bottom: 16px;
 }
 
-.footer-media {
+.footer-info p {
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.footer-media,
+.footer-subscribe {
   color: var(--color-white);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-media p,
+.footer-subscribe p {
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .footer-media-group {
   display: flex;
+  justify-content: center;
   gap: 16px;
   margin-top: 16px;
 }
@@ -482,13 +500,12 @@ label {
 
 .footer-subscribe {
   color: var(--color-white);
+  margin-top: 72px;
 }
 
 .footer-form {
   margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+  display: block;
 }
 
 .email-input {
@@ -507,6 +524,10 @@ label {
 .email-input::placeholder {
   color: var(--color-white);
   letter-spacing: 0.64px;
+}
+
+.footer-subscribe-form {
+  display: block;
 }
 
 .subscribe-form-btn {
@@ -590,84 +611,58 @@ label {
 /* index.html - SEKCJA 2 (FEATURES) */
 
 .features-section {
-  padding: 120px 0;
+  padding: 96px 16px;
 }
 
 .features-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  display: block;
+  /* justify-content: space-between;
+  gap: 24px;*/
   list-style: none;
   text-align: left;
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  margin-bottom: 72px;
 }
 
 .features-icon-item {
-  padding: 24px 100px;
-  background-color: var(--color-cloud);
-  border-radius: 4px;
-}
-
-.features-icon {
-  width: 64px;
-  height: 64px;
+  display: none;
 }
 
 .features-title {
+  text-align: center;
   margin: 8px 0;
-  line-height: 1.2;
-  color: var(--color-navy-blue);
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.features-info {
-  color: var(--color-slate);
-  line-height: 1.2;
-}
-
-/* index.html - SEKCJA 3 */
-
-.studio-projects-section {
-  padding-bottom: 120px;
-}
-
-.studio-projects-heading {
-  margin-bottom: 72px;
   line-height: 1.2;
   color: var(--color-navy-blue);
   font-size: 36px;
   font-weight: 700;
 }
 
-.studio-projects-group {
-  padding: 72px 0 0;
-  display: flex;
-  flex-basis: auto;
-  gap: 24px;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
+.features-info {
+  color: var(--color-slate);
+  line-height: 24px;
+  font-weight: 500;
 }
 
-.studio-projects-item {
-  flex-basis: calc((100% - 48px) / 3);
+/* index.html - SEKCJA 3 */
+
+.studio-projects-section {
+  display: none;
 }
 
 /* index.html - SEKCJA 4 (TEAM) */
 
 .team-section {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: var(--color-cloud);
 }
 
 .team-heading {
   margin-bottom: 72px;
-  line-height: 1.2;
+  line-height: 40px;
+  letter-spacing: 0.72px;
   color: var(--color-navy-blue);
   font-size: 36px;
   font-weight: 700;
@@ -677,7 +672,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
   list-style: none;
   margin-top: 72px;
   flex-wrap: wrap;
@@ -689,7 +684,7 @@ label {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color-white);
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -755,13 +750,14 @@ label {
 /* index.html - SEKCJA 5 (CUSTOMERS) */
 
 .customers-section {
-  padding: 120px 0;
+  padding: 96px 16px;
   background-color: var(--color-white);
 }
 
 .customers-heading {
   margin-bottom: 72px;
-  line-height: 1.2;
+  line-height: 40px;
+  letter-spacing: 0.82px;
   color: var(--color-navy-blue);
   font-size: 36px;
   font-weight: 700;
@@ -769,20 +765,20 @@ label {
 
 .customers-group {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*gap: 24px;*/
-  list-style: none;
-  margin-top: 72px;
   flex-wrap: wrap;
-  padding: 0;
+  column-gap: 24px;
+  row-gap: 72px;
+  list-style-type: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .customer-item {
-  flex-basis: calc((100% - 120px) / 6);
+  /* flex-basis: calc((100% - 32px) / 2); */
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
-  padding: 16px 32px;
+  padding: 16px 40px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
