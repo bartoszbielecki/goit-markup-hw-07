@@ -370,8 +370,8 @@ label {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 24px;
   color: var(--color-navy-blue);
 }
 
@@ -421,7 +421,7 @@ label {
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0.54px;
-  margin: 25.5px 23.5px 16px;
+  margin: 24px 0 22px 16px;
 }
 
 .logo-span {
