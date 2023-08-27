@@ -321,21 +321,6 @@ label {
   margin: 0;
 }
 
-.js-close-menu {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--color-cornflower);
-  width: 24px;
-  height: 24px;
-  justify-content: center;
-  align-items: center;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .close-menu-icon {
 }
 
@@ -399,7 +384,6 @@ label {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
   padding-bottom: 40px;
   color: var(--color-navy-blue);
   text-decoration: none;
@@ -408,6 +392,22 @@ label {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-cornflower);
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* LOGO */
