@@ -394,6 +394,44 @@ label {
   text-transform: capitalize;
 }
 
+.mobile-contact-menu {
+  position: absolute;
+  bottom: 128px;
+  left: 40px;
+  list-style: none;
+}
+
+.mobile-contact-menu .link-contact {
+  font-size: 20px;
+  color: var(--color-slate);
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+
+.link-tel-item {
+  margin-bottom: 40px;
+}
+
+.link-tel-contact {
+  color: var(--color-iris);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.mobile-media-menu {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  gap: 56px;
+}
+
 .js-close-menu {
   position: absolute;
   top: 24px;
