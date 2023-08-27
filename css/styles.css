@@ -60,12 +60,6 @@ img {
 
 /* SEKCJE */
 
-.container {
-  /* width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; */
-}
-
 .section-heading {
   line-height: 1.2;
   color: var(--color-navy-blue);
@@ -692,7 +686,7 @@ label {
 .hero-header {
   color: var(--color-cloud);
   line-height: 40px;
-  letter-spacing: 0.72pxpx;
+  letter-spacing: 0.72px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -751,6 +745,15 @@ label {
 
 .features-icon-item {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .features-icon-item {
+    padding: 24px 100px;
+    background-color: var(--color-cloud);
+    border-radius: 4px;
+    display: block;
+  }
 }
 
 .features-title {
