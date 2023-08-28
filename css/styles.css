@@ -846,6 +846,7 @@ label {
   .hero-section {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section-bg-x2.jpg);
+    background-position: 50% 50%;
     background-size: cover;
   }
 }
