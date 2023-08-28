@@ -1235,15 +1235,15 @@ label {
 /* portfolio.html - SEKCJA 1 */
 
 .projects-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 48px 16px;
 }
 
 /* portfolio.html - SEKCJA 1 (FILTRY) */
 
 .filter-btn-group {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 24px;
   margin-bottom: 72px;
   list-style: none;
@@ -1285,7 +1285,7 @@ label {
 }
 
 .projects-item {
-  flex-basis: calc((100% - 48px) / 3);
+  margin: auto;
   text-decoration: none;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1298,7 +1298,6 @@ label {
   cursor: pointer;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -1365,4 +1364,43 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   color: var(--color-navy-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .filter-btn-group {
+    justify-content: center;
+  }
+
+  .projects-group {
+    max-width: 736px;
+    margin: auto;
+    justify-content: flex-start;
+  }
+
+  .projects-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .projects-item:last-child {
+    margin-left: 0;
+  }
+
+  .projects-section {
+    padding: 64px 16px 96px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-group {
+    max-width: none;
+  }
+
+  .projects-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .projects-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
 }

@@ -40,18 +40,23 @@
               <a href="#" class="link-menu">Contacts</a>
             </li>
           </menu>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="32px" height="22px" class="menu-hamburger">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
         </nav>
         <address class="contact-section">
           <ul class="contact-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link-contact"
-                >info@devstudio.com</a
-              >
+            <li class="link-contact">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
-              <a href="tel:+11(000)1111111" class="link-contact"
-                >+11 (000) 111-11-11</a
-              >
+            <li class="link-contact">
+              <a href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -263,8 +268,8 @@
       </section>
     </main>
     <footer class="footer section">
-      <div class="container footer-group">
-        <div class="footer-info">
+      <ul class="container footer-group">
+        <li class="footer-info">
           <a href="index.html" class="logo-footer"
             ><span class="logo-span">Web</span>studio</a
           >
@@ -272,9 +277,9 @@
             Increase the flow of customers and sales for your business with
             digital marketing & growts solutions.
           </p>
-        </div>
-        <div class="footer-media">
-          <p>Social media</p>
+        </li>
+        <li class="footer-media">
+          <p class="footer-media-text">Social media</p>
           <ul class="footer-media-group">
             <li class="footer-media-item">
               <svg width="24px" height="24px" class="team-member-media-icon">
@@ -297,11 +302,15 @@
               </svg>
             </li>
           </ul>
-        </div>
-        <div class="footer-subscribe">
+        </li>
+        <li class="footer-subscribe">
           <p>Subscribe</p>
           <div class="footer-form">
-            <form name="subscribe-form" autocomplete="on">
+            <form
+              name="subscribe-form"
+              autocomplete="on"
+              class="footer-subscribe-form"
+            >
               <input
                 type="email"
                 name="email"
@@ -316,8 +325,57 @@
               </button>
             </form>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="8px" height="8px" class="close-menu-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="#" class="link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-contact-menu">
+        <li class="link-tel-item">
+          <a href="tel:+11(000)1111111" class="link-tel-contact"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link-contact"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-media-menu">
+        <li class="footer-media-item">
+          <svg width="24px" height="24px" class="team-member-media-icon">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </li>
+        <li class="footer-media-item">
+          <svg width="24px" height="24px" class="team-member-media-icon">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </li>
+        <li class="footer-media-item">
+          <svg width="24px" height="24px" class="team-member-media-icon">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </li>
+        <li class="footer-media-item">
+          <svg width="24px" height="24px" class="team-member-media-icon">
+            <use href="./images/icons.svg#icon-linkedin2"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
