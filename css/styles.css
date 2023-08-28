@@ -727,8 +727,7 @@ label {
   color: var(--color-white);
   font-size: 12px;
   line-height: 24px;
-  max-width: 398px;
-  width: 100%;
+  width: calc(100% - 30px);
   margin: 0 15px 16px;
 }
 
@@ -847,6 +846,7 @@ label {
   .hero-section {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section-bg-x2.jpg);
+    background-size: cover;
   }
 }
 
